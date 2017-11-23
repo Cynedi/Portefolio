@@ -1,0 +1,584 @@
+/*! HTML5 Boilerplate v5.0 | MIT License | http://h5bp.com/ */
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+audio, canvas, iframe, img, svg, video {
+    vertical-align: middle;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+
+/*****************************************************
+*****************GENERALE et Mobile*****************************
+******************************************************/
+
+
+/****************Page Accueil**************************
+*******************************************************/
+
+
+/*****************Titre**************************************/
+
+#body {
+    background-image: url("../img/ornements.jpg");
+    background-size: cover;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    text-align: center;
+}
+
+#block {
+    background-color: white;
+    border: 7px solid rgb(62, 230, 174);
+    margin: auto;
+    color: rgb(223, 168, 116);
+    padding: 15px 5px;
+}
+
+#titre span {
+    font-family: 'Pacifico', cursive;
+    font-size: 20px;
+}
+
+h1 {
+    font-family: 'Playfair Display SC', serif;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+
+/************************Navigation*************************/
+
+#triangle {
+    top: 400px;
+}
+
+.circle {
+    background-color: white;
+    width: 120px;
+    margin-top: 30px;
+}
+
+#user {
+    height: 180px;
+}
+
+.menu {
+    color: rgb(62, 230, 174);
+    font-size: 40px;
+    text-align: center;
+    position: fixed;
+    background-color: white;
+    margin-left: 25px;
+    margin-top: 25px;
+    border: 3px solid rgb(62, 230, 174);
+    border-radius: 3px;
+    z-index: 1;
+}
+
+.side-nav {
+    position: fixed;
+}
+
+.side-nav li {
+    padding: 0 !important;
+}
+
+.user-view {
+    background-color: rgb(62, 230, 174);
+}
+
+#myname {
+    margin-left: 140px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+#triangle, #clik {
+    height: 60px;
+}
+
+#triangle i {
+    color: rgb(62, 230, 174);
+}
+
+
+/**********Page Projets réalisés**********************
+*****************************************************/
+
+#projets {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    width: 290px;
+    margin: auto;
+    background-color: white;
+}
+
+.ecrans {
+    width: 200px;
+    height: auto;
+}
+
+h2 {
+    font-family: 'Pacifico', cursive;
+    background-color: white;
+    color: rgb(62, 230, 174);
+    font-size: 25px;
+    text-align: center;
+    padding: 5px 0px 10px 0px;
+}
+
+.zoom {
+    height: 200px;
+    float: left;
+    margin: auto;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 290px !important;
+    padding: 0! important;
+}
+
+.texte {
+    width: 290px;
+    height: 200px;
+}
+
+.texte a img {
+    width: 100%;
+    height: 200px;
+    transition: all 1s;
+    -moz-transition: all 1s;
+    -webkit-transition: all 1s;
+    -o-transition: all 1s;
+}
+
+
+/**************Texte au survol de la souris*********************/
+
+.texte {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    margin: 0;
+}
+
+.texte img, .descriptif {
+    transition: all .25s ease;
+}
+
+.texte img {
+    display: block;
+}
+
+.descriptif {
+    text-shadow: lightgrey 0.1em 0.1em 0.2em;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: .5em;
+    background: rgba(255, 255, 255, 0.86);
+    color: rgb(62, 230, 174);
+    opacity: 0;
+    font-family: 'Playfair Display SC', serif;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 90px;
+}
+
+.texte:hover img {
+    transform: scale(1.1);
+}
+
+.texte:hover .descriptif {
+    opacity: 1;
+}
+
+
+/*****************Modaux*************************************
+**************************************************************/
+
+.modal-content {
+    width: 100%;
+    margin: auto;
+}
+
+
+/*******************page about***********************
+*********************************************************/
+
+#about {
+    padding-top: 120px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+#lesboutons {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+.dropdown-content li {
+    text-align: center;
+}
+
+.dropdown-content img {
+    width: 80px;
+    margin-left: 40px;
+}
+
+.bouton {
+    margin-bottom: 50px;
+    display: inline-block;
+}
+
+.bouton a {
+    width: 200px;
+}
+
+
+/******************Page Compétences***************
+****************************************************/
+
+h3 {
+    color: #Ef5350;
+    font-family: 'Playfair Display SC', serif;
+    font-size: 20px;
+}
+
+.techno img {
+    width: 50px;
+    height: 50px;
+}
+
+.techno {
+    width: 50px;
+    height: 50px;
+}
+
+.logos {
+    height: auto;
+    margin: 20px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 50px !important;
+}
+
+.techno {
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+}
+
+.techno img {
+    width: 50px;
+    height: 50px;
+    transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+}
+
+.logos:hover>.techno img {
+    transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    -o-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+}
+
+#competences {
+    width: 300px;
+    margin: auto;
+    padding-top: 100px;
+    padding-bottom: 120px;
+}
+
+#border {
+    border: 5px solid rgb(62, 230, 174);
+    width: 300px;
+    height: 280px;
+}
+/***************************bas de page**********************/
+#bye img {
+  width: 200px;
+  height: auto;
+  margin: auto;
+}
+
+#bye {
+  padding-top: 50px;
+  display: flex;
+  margin: auto;
+  width: 100%;
+  background-color:rgb(62, 230, 174) ;
+
+}
+
+
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+
+/***************Tablette*****************
+*****************************************/
+
+@media (min-width: 710px) {
+    #about {
+        padding-top: 150px;
+    }
+}
+
+@media (min-width: 750px) {
+    #about {
+        padding-top: 180px;
+    }
+}
+
+@media (min-width: 768px) {
+    /***************Page Accueil**************/
+    #titre span {
+        font-size: 40px;
+    }
+    h1 {
+        font-size: 32px;
+    }
+    .btn-floating {
+        width: 65px;
+        height: 65px;
+
+    }
+    .btn-floating i {
+      margin-top: 12px;
+    }
+    .mdi-navigation-more-vert {
+        width: 65px;
+        height: 65px;
+        margin-top: 10px;
+    }
+    /**************Navigation*****************/
+    .menu {
+        font-size: 40px;
+        margin-left: 50px;
+        margin-top: 50px;
+        border: 5px solid rgb(62, 230, 174);
+        border-radius: 5px;
+    }
+    /**********************page projets********************/
+    #background {
+        background-color: rgb(62, 230, 174);
+    }
+    #projets {
+        background-color: rgb(62, 230, 174);
+        width: 584px;
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+    #cadre {
+        border: 5px solid rgb(62, 230, 174);
+        width: 590px;
+        height: 610px;
+    }
+    .ecrans {
+        width: 500px;
+        height: auto;
+        margin-bottom: 20px;
+    }
+}
+
+
+/***************Desktop************************
+***************************************************/
+
+@media (min-width: 980px) {
+    /*************Page Accueil************************/
+    #titre span {
+        font-size: 52px;
+    }
+    h1 {
+        font-size: 43px;
+    }
+    /************Page projets****************************/
+    #projets {
+        width: 873px;
+        margin: auto;
+    }
+    #cadre {
+        border: 5px solid rgb(62, 230, 174);
+        width: 880px;
+        height: 410px;
+    }
+    /***************modaux******************************/
+    .modal {
+        width: 900px;
+    }
+    .imagemodal {
+        display: flex;
+    }
+    /*************Page compétences*****************************/
+    #competences {
+        margin-top: 180px;
+    }
+    /*************Page About*******************************/
+    #about {
+        padding-top: 200px;
+    }
+    #lesboutons {
+        display: inline;
+    }
+    .bouton {
+        margin: 50px;
+    }
+    /*************Page competences********************/
+    #competences {
+        padding-top: 120px;
+        padding-bottom: 180px;
+    }
+}
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.visuallyhidden.focusable:active, .visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.clearfix:before, .clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+
+/* ==========================================================================
+   Print styles
+   ========================================================================== */
+
+@media print {
+    *, *:before, *:after {
+        background: transparent !important;
+        color: #000 !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+    a, a:visited {
+        text-decoration: underline;
+    }
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+    a[href^="#"]:after, a[href^="javascript:"]:after {
+        content: "";
+    }
+    pre, blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+    thead {
+        display: table-header-group;
+    }
+    tr, img {
+        page-break-inside: avoid;
+    }
+    img {
+        max-width: 100% !important;
+    }
+    p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+    }
+    h2, h3 {
+        page-break-after: avoid;
+    }
+}
