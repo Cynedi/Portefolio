@@ -275,7 +275,8 @@ h2 {
 
 .dropdown-content img {
     width: 80px;
-    margin-left: 40px;
+    margin-left: 60px;
+
 }
 
 .bouton {
@@ -285,6 +286,10 @@ h2 {
 
 .bouton a {
     width: 200px;
+}
+
+#citations {
+  display: none;
 }
 
 
@@ -350,6 +355,27 @@ h3 {
     border: 5px solid rgb(62, 230, 174);
     width: 300px;
     height: 280px;
+}
+/****************************Footer******************************/
+footer {
+  position: relative;
+
+}
+#citation {
+  display: flex;
+  margin: auto;
+  width: 300px;
+}
+footer span {
+  position: absolute;
+  bottom: 200px;
+  text-align: center;
+  background-color: white;
+  width: 300px;
+  font-family: 'Pacifico', cursive;
+  border: solid 3px black;
+
+
 }
 /***************************bas de page**********************/
 #bye img {
@@ -438,6 +464,38 @@ h3 {
         height: auto;
         margin-bottom: 20px;
     }
+/*********************Page About**************************************/
+
+#citations {
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.cit {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.cit span{
+  text-align: center;
+  background-color: white;
+  width: 100%;
+  margin: 10px;
+  font-family: 'Pacifico', cursive;
+  border: solid 3px black;
+
+
+}
+/**********************Footer****************************************/
+#citation {
+  width: 600px;
+
+}
+
+footer span {
+  width: 600px;
+    font-size: 25px;
+}
 }
 
 
@@ -483,9 +541,13 @@ h3 {
     .bouton {
         margin: 50px;
     }
+    #citations {
+      margin-bottom: 50px;
+      margin-top: -30px;
+    }
     /*************Page competences********************/
     #competences {
-        padding-top: 120px;
+        padding-top: 180px;
         padding-bottom: 180px;
     }
 }
