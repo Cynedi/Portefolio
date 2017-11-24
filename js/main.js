@@ -21,3 +21,5 @@ $(".button-collapse").sideNav();
      stopPropagation: false // Stops event propagation
    }
  );
+
+   $('.carousel.carousel-slider').carousel({fullWidth: true});
