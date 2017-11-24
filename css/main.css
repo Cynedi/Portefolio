@@ -279,13 +279,15 @@ h2 {
 
 .box {
   text-align: center;
-  font-family: 'Pacifico', cursive;
+  font-family: 'Playfair Display SC', serif;
   color: rgb(70, 53, 52);
 }
 
 #bio span {
   font-size: 25px;
+  font-family: 'Pacifico', cursive;
   border: solid rgb(70, 53, 52) 3px;
+  
 }
 
 #bio ul {
