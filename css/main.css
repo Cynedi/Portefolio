@@ -255,6 +255,7 @@ h2 {
 
 /*******************page about***********************
 *********************************************************/
+
 #carousel {
   height: 140px !important;
   margin-bottom: 20px;
@@ -263,39 +264,36 @@ h2 {
 #carousel p {
   font-family: 'Pacifico', cursive;
 }
+
 #about {
-  padding-top: 120px;
+  padding-top: 80px;
   display: flex;
   flex-direction: column;
   margin: auto;
 }
 
-#lesboutons {
-  display: flex;
-  flex-direction: column;
+#bio {
+  width: 100%;
   margin: auto;
 }
 
-.dropdown-content li {
+.box {
   text-align: center;
+  font-family: 'Pacifico', cursive;
+  color: rgb(70, 53, 52);
 }
 
-.dropdown-content img {
-  width: 80px;
-  margin-left: 60px;
+#bio span {
+  font-size: 25px;
+  border: solid rgb(70, 53, 52) 3px;
 }
 
-.bouton {
-  margin-bottom: 50px;
-  display: inline-block;
+#bio ul {
+  margin-top: 20px;
 }
 
-.bouton a {
-  width: 200px;
-}
-
-#citations {
-  display: none;
+#bio p {
+  margin-top: 20px;
 }
 
 
@@ -383,7 +381,8 @@ footer span {
   background-color: white;
   width: 300px;
   font-family: 'Pacifico', cursive;
-  border: solid 3px black;
+  color:rgb(70, 53, 52);
+  border: solid 3px rgb(70, 53, 52);
 }
 
 
@@ -414,13 +413,13 @@ footer span {
 
 @media (min-width: 710px) {
   #about {
-    padding-top: 150px;
+    padding-top: 100px;
   }
 }
 
 @media (min-width: 750px) {
   #about {
-    padding-top: 180px;
+    padding-top: 120px;
   }
 }
 
@@ -473,25 +472,16 @@ footer span {
     margin-bottom: 20px;
   }
   /*********************Page About**************************************/
-#carousel p {
-  font-size: 25px;
-}
-  #citations {
-    display: flex;
-    margin-bottom: 30px;
+  #carousel p {
+    font-size: 25px;
   }
-  .cit {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
+  #bio ul {
+    margin-top: 30px;
+    font-size: 20px;
   }
-  .cit span {
-    text-align: center;
-    background-color: white;
-    width: 100%;
-    margin: 10px;
-    font-family: 'Pacifico', cursive;
-    border: solid 3px black;
+  #bio p {
+    margin-top: 30px;
+    font-size: 20px;
   }
   /**********************Footer****************************************/
   #citation {
@@ -538,7 +528,7 @@ footer span {
   }
   /*************Page About*******************************/
   #about {
-    padding-top: 200px;
+    padding-top: 140px;
   }
   #lesboutons {
     display: inline;
