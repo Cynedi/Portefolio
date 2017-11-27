@@ -385,7 +385,7 @@ footer {
 
 footer span {
   position: absolute;
-  bottom: 200px;
+  bottom: 250px;
   text-align: center;
   background-color: white;
   width: 300px;
@@ -401,6 +401,7 @@ footer span {
   width: 200px;
   height: auto;
   margin: auto;
+  
 }
 
 #bye {
