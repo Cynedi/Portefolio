@@ -385,7 +385,8 @@ footer {
 
 footer span {
   position: absolute;
-  bottom: 250px;
+  -moz-bottom: 200px;
+  -webkit-bottom:350px;
   text-align: center;
   background-color: white;
   width: 300px;
@@ -399,9 +400,10 @@ footer span {
 
 #bye img {
   width: 200px;
-  height: auto;
-  margin: auto;
-  
+  height: 230px;
+  margin-left:25%;
+  -webkit-margin:0px !important;
+
 }
 
 #bye {
@@ -515,6 +517,8 @@ footer span {
   footer span {
     width: 600px;
     font-size: 25px;
+    bottom:250px;
+
   }
 }
 
