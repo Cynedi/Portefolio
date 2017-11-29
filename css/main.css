@@ -315,6 +315,23 @@ h3 {
   font-size: 20px;
 }
 
+.techno img{
+  -webkit-transition:-webkit-transform .9s; // Chrome Safari
+  -moz-transition:-moz-transform .9s;       // Mozilla
+  -o-transition:-o-transform .9s;           // Opéra
+  -ms-transition:-ms-transform .9s;         // IE
+  transition:transform .9s;
+}
+
+.techno img:hover{
+  -webkit-transform:rotate(540deg);
+  -moz-transform:rotate(540deg);
+  -o-transform:rotate(540deg);
+  -ms-transform:rotate(540deg);
+  transform:rotate(540deg);
+}
+
+
 .techno img {
   width: 50px;
   height: 50px;
@@ -340,22 +357,6 @@ h3 {
   overflow: hidden;
 }
 
-.techno img {
-  width: 50px;
-  height: 50px;
-  transition: all 0.3s;
-  -moz-transition: all 0.3s;
-  -webkit-transition: all 0.3s;
-  -o-transition: all 0.3s;
-}
-
-.logos:hover>.techno img {
-  transform: scale(1.05);
-  -ms-transform: scale(1.05);
-  -webkit-transform: scale(1.05);
-  -o-transform: scale(1.05);
-  -moz-transform: scale(1.05);
-}
 
 #competences {
   width: 300px;
